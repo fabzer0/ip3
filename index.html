@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <title>JArrays and Loops</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title>arrays and loops</title>
+
   </head>
-  <body>
-    <div class="container">
-      <div class="col-md-12" id="head">
-        <br>
-        Ping-Pong
+  <body class="container-fluid">
 
-      </div>
-        <div class="col-md-12" id="color">
-          <div class="col-md-4" id="inner">
-            <h3><strong>About ping pong</strong></h3>
-            <h4><strong>Created by:</strong></h4>
-            <p><strong>Kit Fisto</strong></p>
-            <h4><strong>GitHub UserName/URL</strong></h4>
-            <p><strong>FabischApeli</strong></p>
-            <h4><strong>Level 2 test for:</strong></h4>
-            <p><strong>Java</strong></p>
+<!-- Header Syntax -->
 
-
-          </div>
-          <br>
-          <h3><strong>Lets play!</strong></h3>
-          <p>Rules:</p>
-          <p>Ping-pong will count upto your number from 1 with the following exceptions</p>
-          <div id="one">
-            <form class="form-inline">
-              <div class="form-group">
-                <label>Input Here:</label>
-                <input class="form-control" placeholder="Enter a number" id="number">
-
-                <button class="btn btn-default btn btn-primary">Submit</button>
-
-
-
-              </div>
-            </form>
-
-          </div>
-          <div id="two">
-            <p>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-
-              </ul>
-            </p>
-
-          </div>
-        </div>
+    <div id="header" class="container-fluid">
+      <h1 id="pingpong">PING PONG</h1>
     </div>
 
+<!-- main content wrapper - DEsigned as a row housing two collumns -->
+
+    <div class="row">
+      <div class="col-md-4" id="aboutpingpong">
+        <h3>About Ping Pong</h3> <br>
+        <h3 class="aboutcream">Created by</h4><br>
+        <h4>Kit Fisto<h4><br>
+        <h3 class="aboutcream">GitHub Username/URL:<h3><br>
+        <h4 id="greensaber-username-color">greensaber</h4><br>
+        <h3 class="aboutcream">Level 2 Test For:<h3><br>
+        <h4>Java</h4>
+      </div>
+
+<!-- JavaScript Array and Loops Application area -->
+
+
+      <div class="col-md-8" id="mainwrapper">
+        <h1>Let's Play!</h1><br>
+        <h3>Rules:</h3><br>
+        <p>Ping Pong will count up to your number from 1 with the following exceptions: <br>
+          <ol>
+            <li>Numbers Diviscible by 3 become "ping"</li>
+            <li>Numbers Diviscible by 5 become "pong"</li>
+            <li>Numbers Diviscible by 3 and 5 become "pingpong" </li>
+          </ol>
+        </p>
+        <strong>Enter a number larger than 1 here :</strong>
+
+<!-- number type input area below is used to filter off any string input. It can only allow integer entry-->
+
+        <input type="number" id="input">
+        <input type="submit" value="Ping Pong" id="button">
+<!--The button through which you can referesh the page in order to input another value-->
+        <button type="submit" class="refresh-btn"> Refresh </button>
+      </div>
+
+<!-- Program results will be displayed below. The container-class is used to organise the output layout otherwise it overlows to the sides-->
+
+      <div class="container">
+        <ul class="displayResults" id="gameOutput">
+
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
