@@ -3,13 +3,15 @@
   padding-right: 0px;
 }
 #header{
-  height: 250px;
+  height: 220px;
   text-align: center;
-  background-color: #ada57b;
+  background-color: lightyellow;
   font-weight: bolder;
+
 }
 #pingpong{
   font-weight: bold;
+
   font-size: 60px;
   padding-top:4%;
 }
@@ -19,9 +21,11 @@
   background-color: #86e089;
   padding: 47px;
 }
+
 .aboutcream{
   color: #efedb6;
 }
+
 #greensaber-username-color{
   color: #067296;
 }
