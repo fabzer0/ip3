@@ -74,8 +74,6 @@ return results;                                       // output the now-populate
 
 
 
-
-
 //FRONT END LOGIC
 
 $(document).ready(function(){    //waiting till the DOM has fully loaded in order to fully function with the interface elements
