@@ -1,38 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JArrays and Loops</title>
+    <title>Arrays and Loops</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="index.css">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/pingpong.js"></script>
   </head>
   <body class="container-fluid">
-
-
-
-    <div id="header" class="container-fluid">
-      <h1 id="pingpong">PING PONG</h1>
-    </div>
-
-
-
-    <div class="row">
-      <div class="col-md-4" id="aboutpingpong">
-        <h3>About Ping Pong</h3> <br>
-        <h3 class="aboutcream">Created by</h4><br>
-        <h4>Kit Fisto<h4><br>
-        <h3 class="aboutcream">GitHub Username/URL:<h3><br>
-        <h4 id="greensaber">greensaber</h4><br>
-        <h3 class="aboutcream">Level 2 Test For:<h3><br>
-        <h4>Java</h4>
-      </div>
-
-
-
-      <div class="col-md-8" id="mainwrapper">
+      <div class="col-md-12">
         <h1>Let's Play!</h1><br>
         <h3>Rules:</h3><br>
         <p>Ping Pong will count up to your number from 1 with the following exceptions: <br>
@@ -42,21 +19,14 @@
             <li>Numbers Diviscible by 3 and 5 become "pingpong" </li>
           </ol>
         </p>
-        <strong>Input number:</strong>
+        <form id="ping-pong-form">
+          <label for="goal">Enter a number:</label>
+          <input id="goal" type="number">
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <ul id="solution">
 
-
-
-        <input type="number" class="default" id="input">
-        <input type="submit" class="btn btn-default" value="Ping Pong" id="button">
-        <button type="submit" class="btn btn-default"> Refresh </button>
-      </div>
-      <div class="container">
-
-          <ul class="displayResults" id="gameOutput">
-
-          </ul>
-        
-      </div>
+        </ul>
     </div>
   </body>
 </html>
