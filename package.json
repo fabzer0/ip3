@@ -1,0 +1,24 @@
+{
+  "name": "ip3",
+  "version": "1.0.0",
+  "description": "## Contributors Fabisch Apeli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabischapeli/ip3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabischapeli/ip3/issues"
+  },
+  "homepage": "https://github.com/fabischapeli/ip3#readme",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {}
+}
