@@ -1,0 +1,23 @@
+{
+  "name": "ip3",
+  "description": "## Contributors Fabisch Apeli",
+  "main": "index.js",
+  "authors": [
+    "fabischapeli <fabischapeli97@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/fabischapeli/ip3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.19.1"
+  }
+}
